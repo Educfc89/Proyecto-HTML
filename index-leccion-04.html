@@ -13,12 +13,12 @@
 
 		<p>	
 			<label for="nombre">Ingrese su nombre:</label><br>
-			<input type="name" id="nombre" name="nombre" size="30"	maxlength="50">
+			<input type="name" id="nombre" name="nombre" size="30"	maxlength="50" required>
 		</p>
 
 		<p>
 			<label for="contrasena">Ingrese su contraseña:</label><br>
-			<input type="password" name="contrasena" id="contrasena" size="30" maxlength="10">
+			<input type="password" name="contrasena" id="contrasena" size="30" maxlength="10" required>
 		
 			
 		</p>
@@ -35,6 +35,43 @@
 			
 		</p>
 		
+		<p>
+			<label for="mail">Coloque su correo electronico</label><br>
+			<input type="email" name="mail" id="mail" required>
+
+		</p>
+
+		<P>
+			<label for="url">URL Asignada</label><br>
+			<input type="url" name="url" id="url" required placeholder="https://www.youtube.com" size="50">
+
+		</P>
+
+		<p>
+			<label for="telefono">Numero de Telefono</label><br>
+			<input type="tel" name="telefono" id="telefono" required>
+
+		</p>
+		
+
+		<p>
+			<label for="buscar">Buscar</label><br>
+			<input type="search" name="buscar" id="buscar">
+
+		</p>
+
+
+		<p>
+			<label for="cantidad-pro">Cantidad de productos</label>
+			<input type="number" name="cantidad-pro" id="cantidad-pro" min="1" max="50" step="1" required >
+
+		</p>
+
+		<p>
+			<label for="rango">Experiencia del Usuario</label>
+			0<input type="range" name="rango" id="rango" min="0" max="50">100
+
+		</p>
 
 			<h4>Dias disponibles</h4>
 		
