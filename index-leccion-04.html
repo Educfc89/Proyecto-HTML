@@ -3,78 +3,79 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Formularios</title>
+	<title>Leccion04</title>
 </head>
-<body>
-
-	<h1>Formulario de Contacto</h1>
+<body style="background:#772FF2;">
+	<div id="contenedor" style="background:#ffffff; border:2px solid#000000	; margin:30px ";>
+		
+		<h1>Formulario de Contacto</h1>
 
 		<form action="index-leccion-04.html" method="post" 	>
 
-		<p>	
-			<label for="nombre">Ingrese su nombre:</label><br>
-			<input type="name" id="nombre" name="nombre" size="30"	maxlength="50" required>
-		</p>
+			<p>	
+				<label for="nombre">Ingrese su nombre:</label><br>
+				<input type="name" id="nombre" name="nombre" size="30" placeholder="Ingrese Su Nombre" autofocus 	maxlength="50" required>
+			</p>
 
-		<p>
-			<label for="contrasena">Ingrese su contraseña:</label><br>
-			<input type="password" name="contrasena" id="contrasena" size="30" maxlength="10" required>
-		
+			<p>
+				<label for="contrasena">Ingrese su contraseña:</label><br>
+				<input type="password" name="contrasena" id="contrasena" size="30" maxlength="10" required>
+				
+				
+			</p>
 			
-		</p>
-		
 			<h3>Indique su genero</h3>
 
-		<p>
+			<p>
 
-			<input type="radio"	name="genero" id="genero-hombre" value="Hombre"checked>
-			<label for="genero-hombre">Hombre</label>
+				<input type="radio"	name="genero" id="genero-hombre" value="Hombre"checked>
+				<label for="genero-hombre">Hombre</label>
+				
+				<input type="radio"	name="genero" id="genero-mujer" value="Mujer">
+				<label for="genero-mujer">Mujer</label>
+				
+			</p>
 			
-			<input type="radio"	name="genero" id="genero-mujer" value="Mujer">
-			<label for="genero-mujer">Mujer</label>
+			<p>
+				<label for="mail">Coloque su correo electronico</label><br>
+				<input type="email" name="mail" id="mail" required>
+
+			</p>
+
+			<P>
+				<label for="url">URL Asignada</label><br>
+				<input type="url" name="url" id="url" required placeholder="https://www.youtube.com"size="50" disabled>
+
+			</P>
+
+			<p>
+				<label for="telefono">Numero de Telefono</label><br>
+				<input type="tel" name="telefono" id="telefono" required>
+
+			</p>
 			
-		</p>
-		
-		<p>
-			<label for="mail">Coloque su correo electronico</label><br>
-			<input type="email" name="mail" id="mail" required>
 
-		</p>
+			<p>
+				<label for="buscar">Buscar</label><br>
+				<input type="search" name="buscar" id="buscar">
 
-		<P>
-			<label for="url">URL Asignada</label><br>
-			<input type="url" name="url" id="url" required placeholder="https://www.youtube.com" size="50">
-
-		</P>
-
-		<p>
-			<label for="telefono">Numero de Telefono</label><br>
-			<input type="tel" name="telefono" id="telefono" required>
-
-		</p>
-		
-
-		<p>
-			<label for="buscar">Buscar</label><br>
-			<input type="search" name="buscar" id="buscar">
-
-		</p>
+			</p>
 
 
-		<p>
-			<label for="cantidad-pro">Cantidad de productos</label>
-			<input type="number" name="cantidad-pro" id="cantidad-pro" min="1" max="50" step="1" required >
+			<p>
+				<label for="cantidad-pro">Cantidad de productos</label>
+				<input type="number" name="cantidad-pro" id="cantidad-pro" min="1" max="50" step="1" required >
 
-		</p>
+			</p>
 
-		<p>
-			<label for="rango">Experiencia del Usuario</label>
-			0<input type="range" name="rango" id="rango" min="0" max="50">100
+			<p>
+				<label for="rango">Experiencia del Usuario</label>
+				0<input type="range" name="rango" id="rango" min="0" max="50">100
 
-		</p>
+			</p>
 
 			<h4>Dias disponibles</h4>
-		
+			
 
 			<p>
 				<input type="checkbox"	name="dias" id="lunes" value="lunes">
@@ -101,26 +102,112 @@
 
 		</form>
 
+
+
+		<p>
+			<label for="fecha-naci"> Fecha de Nacimiento:</label><br>	
+			<input type="date" name="fecha-naci" id="fecha-naci">
+		</p>
+
+
+		<p>
+
+			<label for="hora-entrega"> Horario de Entrega:</label><br>	
+			<input type="time" name="hora-entrega" id="hora-entrega">
+		</p>
+
+
+		<p>
+			<label for="color"> Color Favorito:</label><br>	
+			<input type="Color" name="color" id="color">
+		</p>	
 		
-			<p>
-				<label for="fecha-naci"> Fecha de Nacimiento:</label><br>	
-				<input type="date" name="fecha-naci" id="fecha-naci">
-
-			</p>
-
-			<p>
-				<label for="hora-entrega"> Horario de Entrega:</label><br>	
-				<input type="time" name="hora-entrega" id="hora-entrega" value="12:00">
-
-			</p>
-				
-			<p>
-				<label for="color"> Color Favorito:</label><br>	
-				<input type="Color" name="color" id="color">
-
-			</p>
+		<p>
+			<label for="bio"> Haga su consulta:</label><br>
+			<textarea name="bio" id="bio" cols="30" rows="10">
+			</textarea>		
+		</p>
 
 
-	
-</body>
-</html>
+		<p>
+			<label for="estado">Seleccione su situacion sentimental</label><br>
+
+			<select name="estado" id="estado">
+
+				<option value="Viudo">Viudo</option>
+				<option value="Soltero">Soltero</option>
+				<option value="Casado">Casado</option>
+
+			</select>
+
+		</p>
+
+
+		<p>
+			<label for="estado">Seleccione su situacion sentimental</label><br>
+
+			<select name="estado" id="estado" multiple>
+
+				<option value="Viudo">Viudo</option>
+				<option value="Soltero">Soltero</option>
+				<option value="Casado">Casado</option>
+
+			</select>
+
+		</p>
+
+		<p>
+			
+			<label for="conocimiento">¿Como nos conociste?</label><br>
+
+			<select name="conocimiento" id="conocimiento">
+
+				<optgroup label="Online">
+					<option value="redes-sociales">Redes Sociales</option>
+					<option value="motores">Motores de Búsqueda</option>
+				</optgroup>
+
+				<optgroup label="Offline">
+					<option value="periodicos">Periodicos</option>
+					<option value="paneles">Paneles Publicitarios</option>
+				</optgroup>
+
+			</select>
+
+
+			<label for="nombre">Ingrese su nombre:</label><br>
+			<input type="name" id="nombre" name="nombre" size="30" placeholder="Este campo es de solo lectura"  	maxlength="50" readonly>
+		</p>
+
+
+		<p>
+			
+
+		</p>
+
+		
+		<p>
+			<label for="fecha-naci"> Fecha de Nacimiento:</label><br>	
+			<input type="date" name="fecha-naci" id="fecha-naci">
+
+		</p>
+
+		<p>
+			<label for="hora-entrega"> Horario de Entrega:</label><br>	
+			<input type="time" name="hora-entrega" id="hora-entrega" value="12:00">
+
+		</p>
+		
+		<p>
+			<label for="color"> Color Favorito:</label><br>	
+			<input type="Color" name="color" id="color">
+
+		</p>
+
+	</p>
+
+	<a href="index-leccion-05-etiquetas-estructurales.html"> Seguir a la leccion 05</a>
+
+	<p>	
+	</body>
+	</html>
